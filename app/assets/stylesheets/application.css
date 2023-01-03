@@ -13,3 +13,78 @@
  *= require_tree .
  *= require_self
  */
+
+ body {
+    /* text-align: center;
+    font-family: Arial;
+    font-weight: normal;
+    font-size: 2rem;
+    background-color: transparent;
+    margin: 0px; */
+    /* overflow: hidden; */
+
+    /* Text not selectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    -webkit-app-region: no-drag;
+    cursor: default;
+}
+
+.menu button, .menu .dropdown-menu, .menu a {
+  font-family: Arial;
+  font-size: 1.3rem;
+  background-color: white;
+}
+
+.menu button {
+  border: none;
+  display: block;
+  height: auto;
+  width: 10.4rem;
+  padding: 7.8px 10.4px;
+  margin: 0;
+  text-align: left;
+  color: black;
+}
+
+.menu button:hover {
+  background-color: blue;
+  color: white;
+}
+
+.menu {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-menu, .submenu {
+  display: none;
+  position: absolute;
+  min-width: 10.4rem;
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.menu a {
+  color: blue;
+  padding: 7.8px 10.4px;
+  text-decoration: underline;
+  display: block;
+}
+
+.menu a:link, .menu a:visited {
+  color: blue;
+}
+
+.menu a:hover, .menu a:visited:hover {
+  background-color: blue;
+  color: white;
+}
+
+.menu .submenu {
+  left: 100%;
+  top: 0%;
+}
+
